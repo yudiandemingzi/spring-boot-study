@@ -1,0 +1,41 @@
+/**/.DS_Store
+/logs/
+/dubbo/
+/**/*.iml
+/**/test/**/*.java
+
+target/
+data/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+idea/
+nbbuild/
+dist/
+nbdist/
+
+
+.nb-gradle/
+mvnw
+mvnw.cmd
+.mvn
+/bin/
+
+
+.flattened-pom.xml
