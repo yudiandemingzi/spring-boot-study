@@ -2,22 +2,18 @@ package com.jincou.rocketmq.jms;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
-import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.common.message.MessageExt;
 import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
-import java.util.List;
 
 /**
- * @Description: 消费者类
- *
  * @author xub
+ * @Description: 消费者类
  * @date 2019/6/29 下午8:51
  */
 @Slf4j
@@ -57,7 +53,7 @@ public class Consumer {
                     try {
                         //消费者获取消息 这里只输出 不做后面逻辑处理
                         String body = new String(msg.getBody(), "utf-8");
-                        log.info("消费者获取消息:输出topic={},tags={},keys={},msg={}",msg.getTopic(), msg.getTags(), msg.getKeys(),body);
+                        log.info("Consumer-获取消息-主题topic为={}, 消费消息为={}",msg.getTopic(),body);
                         return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
@@ -70,7 +66,7 @@ public class Consumer {
         });
 
         consumer.start();
-        System.out.println("消费者 激动成功=======");
+        System.out.println("消费者 启动成功=======");
     }
 
 }
