@@ -1,0 +1,18 @@
+server:
+  port: 8123
+
+app:
+  id: springboot-test-apollo
+apollo:
+  meta: http://127.0.0.1:8080
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+
+#这里说明在将该项目 com目录下的日志，都采用info模式输出
+logging:
+  level:
+    com: info
+
+
