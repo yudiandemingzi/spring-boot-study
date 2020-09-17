@@ -9,7 +9,8 @@
 		<module>03-conditional</module>
 		<module>04-conditionalon</module>
 		<module>05-reocketmq</module>
-	</modules>
+        <module>07-test</module>
+    </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
