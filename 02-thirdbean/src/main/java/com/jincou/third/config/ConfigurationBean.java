@@ -1,6 +1,9 @@
 package com.jincou.third.config;
 
 import com.jincou.third.bean.ThirdConfigBean;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan("com.jincou.third")
-public class BeanConfig {
+public class ConfigurationBean {
 
     @Bean
     public ThirdConfigBean thirdConfigBean() {
