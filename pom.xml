@@ -9,7 +9,8 @@
 		<module>03-conditional</module>
 		<module>04-conditionalon</module>
 		<module>05-reocketmq</module>
-        <module>07-test</module>
+        <module>06-apollo</module>
+        <module>07-validation</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -43,7 +44,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.16.20</version>
+			<version>1.18.8</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->

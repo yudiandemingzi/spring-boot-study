@@ -1,4 +1,4 @@
-package com.jincou.bean.factory;
+package com.jincou.validation.factory;
 
 import lombok.extern.slf4j.Slf4j;
 

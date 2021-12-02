@@ -1,4 +1,4 @@
-package com.jincou.bean.controller;
+package com.jincou.validation.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.jincou.third.bean.ThirdComponentBean;

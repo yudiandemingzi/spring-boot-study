@@ -1,4 +1,4 @@
-package com.jincou.bean.simple;
+package com.jincou.validation.simple;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

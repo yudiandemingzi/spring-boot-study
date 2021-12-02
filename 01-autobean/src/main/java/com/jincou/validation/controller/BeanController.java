@@ -1,11 +1,11 @@
-package com.jincou.bean.controller;
+package com.jincou.validation.controller;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.jincou.bean.simple.ComponentBean;
-import com.jincou.bean.simple.ConfigBean;
+import com.jincou.validation.simple.ComponentBean;
+import com.jincou.validation.simple.ConfigBean;
 
 import java.util.HashMap;
 import java.util.Map;

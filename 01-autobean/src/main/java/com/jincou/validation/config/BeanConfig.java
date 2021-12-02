@@ -1,11 +1,11 @@
-package com.jincou.bean.config;
+package com.jincou.validation.config;
 
 
-import com.jincou.bean.factory.FacBean;
-import com.jincou.bean.factory.Factory;
+import com.jincou.validation.factory.FacBean;
+import com.jincou.validation.factory.Factory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import com.jincou.bean.simple.ConfigBean;
+import com.jincou.validation.simple.ConfigBean;
 
 /**
  * @Description: 生成Bean
