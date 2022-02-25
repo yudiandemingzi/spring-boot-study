@@ -7,3 +7,5 @@
 3、[SpringBoot(16)—@ConditionalOnBean与@ConditionalOnClass](https://www.cnblogs.com/qdhxhz/p/11027546.html)
 
 4、[SpringBoot(17）---SpringBoot整合RocketMQ](https://www.cnblogs.com/qdhxhz/p/11109696.html)
+
+5、[Spring Boot 实现各种参数校验(附项目源码) ](https://www.cnblogs.com/qdhxhz/p/15639059.html)
