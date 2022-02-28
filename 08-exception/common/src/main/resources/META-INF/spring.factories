@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.jincou.exception.config.ViewExceptionResolver,\
+  com.jincou.exception.i18n.UnifiedMessageSource
+
