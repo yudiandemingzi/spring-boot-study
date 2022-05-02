@@ -12,7 +12,8 @@
         <module>06-apollo</module>
         <module>07-validation</module>
 		<module>08-exception</module>
-	</modules>
+        <module>09-screw</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
