@@ -1,0 +1,29 @@
+server:
+  port: 8010
+
+spring:
+  profiles: # 环境配置
+    active: dev
+
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/mall_user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Hongkong
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Logger Config
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug 
+    
+# 驼峰下划线转换
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+  global-config:
+    db-config:
+      logic-delete-field: deleted # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)    

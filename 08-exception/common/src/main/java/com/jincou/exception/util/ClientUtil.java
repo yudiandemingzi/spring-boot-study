@@ -7,12 +7,10 @@ import com.jincou.exception.pojo.CommandResult;
 import java.util.function.Supplier;
 
 /**
- * <pre>
  *  远程调用工具类
- * </pre>
- *
- * @author sprainkle
- * @date 2019/5/2
+ * 
+ * @author xub
+ * @date 2022/9/26 上午10:09
  */
 public class ClientUtil {
 

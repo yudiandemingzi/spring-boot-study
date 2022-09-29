@@ -13,6 +13,7 @@
         <module>07-validation</module>
 		<module>08-exception</module>
         <module>09-screw</module>
+        <module>10-mybatis-plus</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
