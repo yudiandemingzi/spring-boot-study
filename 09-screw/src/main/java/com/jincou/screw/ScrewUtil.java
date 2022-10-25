@@ -30,9 +30,9 @@ public class ScrewUtil {
         //数据源
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        hikariConfig.setJdbcUrl("jdbc:mysql://118.31.224.65:3306/mall_order");
+        hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/mall_order");
         hikariConfig.setUsername("root");
-        hikariConfig.setPassword("XiH17XuN?aXkZY");
+        hikariConfig.setPassword("root");
         //设置可以获取tables remarks信息
         hikariConfig.addDataSourceProperty("useInformationSchema", "true");
         hikariConfig.setMinimumIdle(2);
@@ -49,7 +49,7 @@ public class ScrewUtil {
                 //生成模板实现
                 .produceType(EngineTemplateType.freemarker)
                 //自定义文件名称
-                .fileName("商品数据库表结构").build();
+                .fileName("箱量控制表结构").build();
 
         //忽略表
         ArrayList<String> ignoreTableName = new ArrayList<>();
