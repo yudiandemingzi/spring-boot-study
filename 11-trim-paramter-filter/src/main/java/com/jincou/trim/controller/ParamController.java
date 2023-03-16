@@ -19,7 +19,8 @@ public class ParamController {
      * 1、get方法测试首尾去空格
      */
     @GetMapping(value = "/getTrim")
-    public String getTrim(@RequestParam String username, @RequestParam String phone) {
+    public String getTrim( String username,  String phone) {
+        
         return username + "&" + phone;
     }
 
@@ -27,7 +28,7 @@ public class ParamController {
      * 2、post方法测试首尾去空格
      */
     @PostMapping(value = "/postTrim")
-    public String postTrim(@RequestParam String username, @RequestParam String phone) {
+    public String postTrim( String username, String phone) {
         return username + "&" + phone;
     }
 

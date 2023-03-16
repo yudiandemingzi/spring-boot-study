@@ -67,6 +67,9 @@ public class TrimRequestWrapper extends HttpServletRequestWrapper {
             String[] values = params.get(key);
             values[0] = values[0].trim();
             params.put(key, values);
+            if (StringUtils.isBlank(values[0])) {
+                params.put(key, null);
+            }
         }
 
     }

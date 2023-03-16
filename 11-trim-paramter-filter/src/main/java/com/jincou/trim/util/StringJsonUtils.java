@@ -34,6 +34,8 @@ public class StringJsonUtils {
                         if (o == null) {
                             continue;
                         } else if ("".equals(o.toString().trim())) {
+                            //空转null
+                            ((JSONObject) obj).put(key1, null);
                             continue;
                         } else {
                             ((JSONObject) obj).put(key1, o.toString().trim());
@@ -54,6 +56,8 @@ public class StringJsonUtils {
                                 if (o1 == null) {
                                     continue;
                                 } else if ("".equals(o1.toString().trim())) {
+                                    //空转null
+                                    ((JSONObject) obj).put(key1, null);
                                     continue;
                                 } else {
                                     ((JSONObject) o).put(key1, o1.toString().trim());
@@ -64,6 +68,8 @@ public class StringJsonUtils {
                         if (o == null) {
                             continue;
                         } else if ("".equals(o.toString().trim())) {
+                            //空转null
+                            ((JSONArray) obj).set(i,null);
                             continue;
                         } else {
                             ((JSONArray) obj).set(i, ((String) o).trim());
@@ -75,6 +81,8 @@ public class StringJsonUtils {
                 if (obj == null) {
                     continue;
                 } else if ("".equals(obj.toString().trim())) {
+                    //空转null
+                    reagobj.put(key, null);
                     continue;
                 } else {
                     reagobj.put(key, obj.toString().trim());
