@@ -1,6 +1,5 @@
 package com.jincou.mybatisplus.dao;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jincou.mybatisplus.model.UserDO;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -13,6 +12,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @since 2022-09-26
  */
 @Mapper
-public interface UserMapper extends BaseMapper<UserDO> {
+public interface UserMapper extends MyBaseMapper<UserDO> {
 
 }

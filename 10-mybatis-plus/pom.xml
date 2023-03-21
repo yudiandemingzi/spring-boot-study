@@ -12,13 +12,13 @@
     <artifactId>10-mybatisplus</artifactId>
     <properties>
         <mybatis-plus-generator.version>3.5.1</mybatis-plus-generator.version>
-        <mybatis-plus.version>3.4.3.4</mybatis-plus.version>
+        <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <mysql8.version>8.0.26</mysql8.version>
         <druid>1.1.20</druid>
     </properties>
 
-    
-    
+
+
     <dependencies>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -43,7 +43,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.3.0</version>
+            <version>3.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>

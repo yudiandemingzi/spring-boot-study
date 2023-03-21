@@ -1,14 +1,11 @@
 package com.jincou.mybatisplus.model;
 
 import com.baomidou.mybatisplus.annotation.*;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
 
 
 @Data
@@ -55,6 +52,6 @@ public class UserDO implements Serializable {
      * 1、删除 0、未删除
      */
     @TableField(value = "deleted",fill = FieldFill.INSERT)
-    @TableLogic
+    @TableLogic(value = "0", delval = "id")
     private Integer deleted;
 }
