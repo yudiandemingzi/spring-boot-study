@@ -15,7 +15,8 @@
         <module>09-screw</module>
         <module>10-mybatis-plus</module>
 		<module>11-trim-paramter-filter</module>
-	</modules>
+        <module>12-mybatis-plus-generator-ui</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
