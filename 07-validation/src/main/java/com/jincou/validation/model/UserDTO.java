@@ -15,6 +15,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
+import javax.validation.groups.Default;
 
 /**
  *  用户实体
@@ -36,13 +37,13 @@ public class UserDTO {
     private Long userId;
 
     @ApiModelProperty("用户名")
-    @NotNull(groups = {Save.class, Update.class})
-    @Length(min = 2, max = 10, groups = {Save.class, Update.class})
+    @NotNull
+    @Length(min = 2, max = 10)
     private String userName;
 
     @ApiModelProperty("年龄")
-    @Min(value = 1, groups = {Save.class, Update.class})
-    @Max(value = 99, groups = {Save.class, Update.class})
+    @Min(value = 1)
+    @Max(value = 99)
     private int age;
 
     @ApiModelProperty("性别")
@@ -50,7 +51,7 @@ public class UserDTO {
     private String sex;
 
     @ApiModelProperty("兴趣")
-    @NotNull(groups = {Save.class, Update.class})
+    @NotNull
     @Valid
     private Interest interest;
 
@@ -64,8 +65,8 @@ public class UserDTO {
         private Long interestId;
 
         @ApiModelProperty("兴趣名称")
-        @NotNull(groups = {Save.class, Update.class})
-        @Length(min = 2, max = 10, groups = {Save.class, Update.class})
+        @NotNull
+        @Length
         private String interestName;
 
     }
@@ -73,12 +74,12 @@ public class UserDTO {
     /**
      * 保存的时候校验分组
      */
-    public interface Save {
+    public interface Save extends Default {
     }
 
     /**
      * 更新的时候校验分组
      */
-    public interface Update {
+    public interface Update extends Default {
     }
 }

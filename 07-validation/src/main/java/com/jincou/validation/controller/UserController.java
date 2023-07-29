@@ -33,7 +33,7 @@ public class UserController {
 
     @PostMapping("/save")
     @ApiOperation("保存用户")
-    public Result saveUser(@RequestBody @Validated({UserDTO.Save.class, Default.class}) UserDTO userDTO) {
+    public Result saveUser(@RequestBody @Validated UserDTO userDTO) {
         // 校验通过，才会执行业务逻辑处理
         return Result.success();
     }
