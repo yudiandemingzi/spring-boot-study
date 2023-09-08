@@ -16,6 +16,7 @@
         <module>10-mybatis-plus</module>
 		<module>11-trim-paramter-filter</module>
         <module>12-mybatis-plus-generator-ui</module>
+        <module>13-observer</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
