@@ -13,7 +13,7 @@
     <properties>
         <mybatis-plus-generator.version>3.5.1</mybatis-plus-generator.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
-        <mysql8.version>8.0.26</mysql8.version>
+        <mysql8.version>8.0.28</mysql8.version>
         <druid>1.1.20</druid>
     </properties>
 
